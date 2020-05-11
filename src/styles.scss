@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap.min";
+
+body {
+	background: #DDDDDD;
+	color: #333333;
+	font-family: 'Open Sans', sans-serif;
+}
+ul {
+	list-style:none;
+	padding: 0px;
+}
+.post, .single, .comment {
+	background: #EEEEEE;
+	padding: 5px;
+	border-radius: 3px;
+	margin: 2px 2px 20px 2px;
+	overflow: hidden;
+}
+.comments.container {
+	background: #F4F4F4;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+
+.post{
+	height: 300px;
+}
+
+.single img {
+	max-height: 400px;
+}
+
+.comment img {
+	max-height: 100px;
+	max-width: 100px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.post.media a {
+	max-width: 40%;
+	height: 100%
+}
+
+.media-body {
+	text-overflow: ellipsis;
+	margin:10px;
+}
+
+a {
+	color: #1b273e;
+}
+a:hover {
+	color:#4f6185;
+}
+h1 {
+	margin: 0px 10px;
+}
+.author {
+	font-weight: bold;
+}
+.date {
+	font-style: italic;
+	color: grey;
+	font-size: small;
+}

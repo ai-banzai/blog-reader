@@ -1,0 +1,29 @@
+<div class=" single container">
+	<h2>{{single.title}}</h2>
+	<img data-src={{single.image}}>
+	<div innerHTML={{single.content}}></div>
+</div>
+
+<div class="comments container">
+	<h2>Comments</h2>
+	<ul>
+		<li class = "comment media" *ngFor="let comment of comments | paginate: { itemsPerPage: 10, currentPage: p }" >
+			
+		
+			<div class="pull-left">
+				<img class="media-object" data-src={{comment.avatar}}>
+				<p class="author">{{comment.author}}</p>
+			</div>
+			<div class="media-body">
+				<div class="date">	{{ comment.date }} </div>
+				<div innerHTML={{comment.content}}></div>
+			</div>
+		
+		</li>
+	</ul>
+
+	<pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+	
+</div>
+<div class="container" ><h2>Other Posts</h2></div>
