@@ -9,6 +9,7 @@ Those components use services ("comment.service.ts" and "post.service.ts" in "sr
 In order to run the app:
 -download and unpack the repository
 -open the repository folder in a terminal and execute "ng serve" (angular needed)
+- navigate to http://localhost:4200
 
 Thank you!
 
